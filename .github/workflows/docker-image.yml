@@ -13,8 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Set build timestamp
-      run: echo "TAG=$(date +%s)" >> $GITHUB_ENV
+    - name: List repo structure
+      run: ls -R .
 
     - name: Build the Docker image
-      run: docker build landing_page --file landing_page/Dockerfile --tag logo1:${{ env.TAG }}
+      run: docker build landing_page --file landing_page/Dockerfile --tag logo1:latest
