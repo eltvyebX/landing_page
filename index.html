@@ -1,52 +1,122 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> تطبيق وَصــــل+</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            background: #f6f6f6;
-            margin: 0;
-            padding: 0;
-        }
-    
-        h1 {
-            margin-top: 0;
-            font-size: 30px;
-            color: #634E42;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: #634E42;
-        }
-        .contact-box {
-            margin-top: 25px;
-            padding: 20px;
-            background: #f0f2f5;
-            border-radius: 12px;
-        }
-        .contact-box strong {
-            font-size: 20px;
-            color: #000;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تطبيق وَصــــل+</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f6f6f6;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .hero {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #6c63ff, #00d4ff);
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #D13047; /* لون التطبيق */
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    .feature {
+      padding: 60px 0;
+    }
+
+    .feature .icon {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #6c63ff;
+    }
+
+    .contact-box {
+      margin-top: 40px;
+      padding: 30px;
+      background: #f0f2f5;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .contact-box strong {
+      font-size: 22px;
+      color: #000;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 140px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    .shape-top, .shape-bottom {
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background: white;
+    }
+
+    .shape-top { top: -50px; transform: skewY(-5deg); }
+    .shape-bottom { bottom: -50px; transform: skewY(5deg); }
+  </style>
 </head>
 <body>
-        <img src="logo1.png" alt="شعار التطبيق" style="width:140px; display:block; margin:0 auto 20px;" />
-        <h1>تطبيق وَصـــل+</h1>
-        <p>
-            تطبيق يساعد أصحاب الأعمال والتجار على حفظ إشعارات بنكك بصورة منظمة وسهلة،
-            دون الحاجة للتدوين التقليدي. يوفر التطبيق ميزات إضافية لتتبع المعاملات
-            اليومية المتعلقة بحفظ وعرض الاشعارات البنكية   .
-        </p>
 
-        <div class="contact-box">
-            <strong>للتواصل:</strong>
-            <p>واتساب: +249111329567</p>
+  <!-- قسم Hero -->
+  <section class="hero">
+    <div class="shape-top"></div>
+    <img src="logo1.png" alt="شعار التطبيق" />
+    <h1>تطبيق وَصــــل+</h1>
+    <p>إدارة الاشعارات البنكية بسهولة وتنظيم — تواصل الآن للحصول على التطبيق</p>
+    <div class="shape-bottom"></div>
+  </section>
+
+  <!-- قسم الميزات -->
+  <section class="feature">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="icon">📱</div>
+          <h3>سهل الاستخدام</h3>
+          <p>واجهة بسيطة وسهلة لأصحاب الأعمال.</p>
         </div>
+        <div class="col-md-4">
+          <div class="icon">💾</div>
+          <h3>حفظ محفوظات</h3>
+          <p>تخزين الاشعارات البنكية وتنظيمها بطريقة آمنة.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon">📊</div>
+          <h3>تقارير يومية</h3>
+          <p>عرض المعاملات اليومية  </p>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- قسم التواصل -->
+  <section class="contact-box">
+    <strong>للتواصل وطلب التطبيق:</strong>
+    <p>واتساب: +249111329567</p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
