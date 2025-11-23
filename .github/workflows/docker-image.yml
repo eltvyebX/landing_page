@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag logo1.png:$(date +%s)
+      run: docker build landing_page --file landing_page/Dockerfile --tag logo1:$(date +%s)
