@@ -17,4 +17,4 @@ jobs:
       run: ls -R .
 
     - name: Build the Docker image
-      run: docker build landing_page --file landing_page/Dockerfile --tag logo1:latest
+      run: docker build landing_page --file landing_page/Dockerfile --tag logo1-01:latest
